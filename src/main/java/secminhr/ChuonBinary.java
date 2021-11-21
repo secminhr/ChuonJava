@@ -4,6 +4,7 @@ import secminhr.typing.chuontype.ChuonType;
 import secminhr.typing.chuontype.Types;
 import secminhr.typing.javatype.UnsignedByte;
 import secminhr.typing.javatype.UnsignedInt;
+import secminhr.typing.javatype.UnsignedLong;
 import secminhr.typing.javatype.UnsignedShort;
 
 import java.util.stream.Stream;
@@ -46,6 +47,22 @@ public class ChuonBinary {
     public ChuonBinary(UnsignedInt number) {
         type = Types.UInt;
         array = Types.UInt.convertToByteArray(number);
+    }
+
+    public ChuonBinary(UnsignedLong number) {
+        type = Types.ULong;
+        array = Types.ULong.convertToByteArray(number);
+    }
+
+    public ChuonBinary(float number) {
+        type = Types.Float;
+        array = Types.Float.convertToByteArray(number);
+
+    }
+
+    public ChuonBinary(double number) {
+        type = Types.Double;
+        array = Types.Double.convertToByteArray(number);
     }
 
     public Byte[] getBytes() {
