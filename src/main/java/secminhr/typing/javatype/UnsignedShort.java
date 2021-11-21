@@ -1,4 +1,4 @@
-package secminhr;
+package secminhr.typing.javatype;
 
 import static secminhr.typing.ByteArrayHelper.LEByteBuffer;
 

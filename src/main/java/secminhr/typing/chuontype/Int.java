@@ -1,19 +1,19 @@
-package secminhr.typing;
+package secminhr.typing.chuontype;
 
 import static secminhr.typing.ByteArrayHelper.LEByteBuffer;
 import static secminhr.typing.ByteArrayHelper.boxingByteArray;
 
-class Short implements ChuonType<java.lang.Short> {
+public class Int implements ChuonType<Integer> {
 
     @Override
-    public Byte[] convertToByteArray(java.lang.Short number) {
+    public Byte[] convertToByteArray(Integer number) {
         return boxingByteArray(
-            LEByteBuffer(java.lang.Short.BYTES).putShort(number).array()
+            LEByteBuffer(Integer.BYTES).putInt(number).array()
         );
     }
 
     @Override
     public byte getTypeInByte() {
-        return 0x12;
+        return 0x13;
     }
 }

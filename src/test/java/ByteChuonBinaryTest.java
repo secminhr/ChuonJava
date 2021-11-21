@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
 import secminhr.ChuonBinary;
-import secminhr.UnsignedByte;
+import secminhr.typing.javatype.UnsignedByte;
 
 import static org.junit.jupiter.api.Assertions.*;
 

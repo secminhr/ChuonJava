@@ -1,4 +1,4 @@
-package secminhr.typing;
+package secminhr.typing.chuontype;
 
 class SByte implements ChuonType<Byte> {
 

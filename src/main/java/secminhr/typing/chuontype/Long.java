@@ -1,4 +1,4 @@
-package secminhr.typing;
+package secminhr.typing.chuontype;
 
 import static secminhr.typing.ByteArrayHelper.LEByteBuffer;
 import static secminhr.typing.ByteArrayHelper.boxingByteArray;

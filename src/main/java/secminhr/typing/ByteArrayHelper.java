@@ -10,7 +10,7 @@ public class ByteArrayHelper {
                 .order(ByteOrder.LITTLE_ENDIAN);
     }
 
-    static Byte[] boxingByteArray(byte[] array) {
+    public static Byte[] boxingByteArray(byte[] array) {
         Byte[] boxedArray = new Byte[array.length];
 
         for(int i = 0; i < array.length; i++) {

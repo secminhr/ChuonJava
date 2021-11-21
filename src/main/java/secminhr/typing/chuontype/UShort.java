@@ -1,6 +1,6 @@
-package secminhr.typing;
+package secminhr.typing.chuontype;
 
-import secminhr.UnsignedShort;
+import secminhr.typing.javatype.UnsignedShort;
 
 import static secminhr.typing.ByteArrayHelper.boxingByteArray;
 

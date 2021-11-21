@@ -1,4 +1,4 @@
-package secminhr;
+package secminhr.typing.javatype;
 
 public class UnsignedByte {
     private final short number;

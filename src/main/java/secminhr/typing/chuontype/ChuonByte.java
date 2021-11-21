@@ -1,6 +1,6 @@
-package secminhr.typing;
+package secminhr.typing.chuontype;
 
-import secminhr.UnsignedByte;
+import secminhr.typing.javatype.UnsignedByte;
 
 //Add Chuon prefix to distinguish from java.lang.Byte
 class ChuonByte implements ChuonType<UnsignedByte> {

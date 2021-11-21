@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
 import secminhr.ChuonBinary;
-import secminhr.UnsignedShort;
+import secminhr.typing.javatype.UnsignedShort;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
