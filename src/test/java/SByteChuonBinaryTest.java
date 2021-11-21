@@ -1,4 +1,6 @@
 import org.junit.jupiter.api.Test;
+import secminhr.ChuonBinary;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class SByteChuonBinaryTest {
