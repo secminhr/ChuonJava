@@ -1,6 +1,6 @@
 package secminhr.typing.chuontype;
 
-class SByte implements ChuonType<Byte> {
+class SByteType implements ChuonType<Byte> {
 
     @Override
     public Byte[] convertToByteArray(Byte number) {

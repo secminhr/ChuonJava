@@ -1,17 +1,17 @@
 package secminhr.typing.chuontype;
 
-import secminhr.typing.javatype.UnsignedShort;
+import secminhr.typing.javatype.UnsignedLong;
 
 import static secminhr.typing.ByteArrayHelper.boxingByteArray;
 
-public class UShort implements ChuonType<UnsignedShort> {
+public class ULongType implements ChuonType<UnsignedLong> {
     @Override
-    public Byte[] convertToByteArray(UnsignedShort number) {
+    public Byte[] convertToByteArray(UnsignedLong number) {
         return boxingByteArray(number.toByteArray());
     }
 
     @Override
     public byte getTypeInByte() {
-        return 0x15;
+        return 0x17;
     }
 }

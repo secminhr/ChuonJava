@@ -3,7 +3,7 @@ package secminhr.typing.chuontype;
 import static secminhr.typing.ByteArrayHelper.LEByteBuffer;
 import static secminhr.typing.ByteArrayHelper.boxingByteArray;
 
-public class Int implements ChuonType<Integer> {
+public class IntType implements ChuonType<Integer> {
 
     @Override
     public Byte[] convertToByteArray(Integer number) {

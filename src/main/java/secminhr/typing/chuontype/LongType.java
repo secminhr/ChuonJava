@@ -3,7 +3,7 @@ package secminhr.typing.chuontype;
 import static secminhr.typing.ByteArrayHelper.LEByteBuffer;
 import static secminhr.typing.ByteArrayHelper.boxingByteArray;
 
-public class Long implements ChuonType<java.lang.Long> {
+public class LongType implements ChuonType<java.lang.Long> {
     @Override
     public Byte[] convertToByteArray(java.lang.Long number) {
         return boxingByteArray(

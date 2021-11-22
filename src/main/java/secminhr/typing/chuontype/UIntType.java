@@ -4,7 +4,7 @@ import secminhr.typing.javatype.UnsignedInt;
 
 import static secminhr.typing.ByteArrayHelper.boxingByteArray;
 
-public class UInt implements ChuonType<UnsignedInt> {
+public class UIntType implements ChuonType<UnsignedInt> {
     @Override
     public Byte[] convertToByteArray(UnsignedInt number) {
         return boxingByteArray(number.toByteArray());

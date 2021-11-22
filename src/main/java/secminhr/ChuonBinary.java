@@ -2,10 +2,7 @@ package secminhr;
 
 import secminhr.typing.chuontype.ChuonType;
 import secminhr.typing.chuontype.Types;
-import secminhr.typing.javatype.UnsignedByte;
-import secminhr.typing.javatype.UnsignedInt;
-import secminhr.typing.javatype.UnsignedLong;
-import secminhr.typing.javatype.UnsignedShort;
+import secminhr.typing.javatype.*;
 
 import java.util.stream.Stream;
 
@@ -63,6 +60,11 @@ public class ChuonBinary {
     public ChuonBinary(double number) {
         type = Types.Double;
         array = Types.Double.convertToByteArray(number);
+    }
+
+    public ChuonBinary(Decimal number) {
+        type = Types.Decimal;
+        array = Types.Decimal.convertToByteArray(number);
     }
 
     public Byte[] getBytes() {
