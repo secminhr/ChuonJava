@@ -67,6 +67,16 @@ public class ChuonBinary {
         array = Types.Decimal.convertToByteArray(number);
     }
 
+    public ChuonBinary(char c) {
+        type = Types.Char;
+        array = Types.Char.convertToByteArray(c);
+    }
+
+    public ChuonBinary(String s) {
+        type = Types.String;
+        array = Types.String.convertToByteArray(s);
+    }
+
     public Byte[] getBytes() {
         return Stream
                 .concat(Stream.of(type.getTypeInByte()), Stream.of(array))
