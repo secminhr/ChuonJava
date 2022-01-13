@@ -16,4 +16,5 @@ public class Types {
     public final static ChuonType<Decimal> Decimal = new DecimalType();
     public final static ChuonType<Character> Char = new CharType();
     public final static ChuonType<String> String = new StringType();
+    public final static ChuonType<Boolean> Boolean = new BooleanType();
 }

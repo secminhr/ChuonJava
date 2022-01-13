@@ -77,6 +77,11 @@ public class ChuonBinary {
         array = Types.String.convertToByteArray(s);
     }
 
+    public ChuonBinary(boolean b) {
+        type = Types.Boolean;
+        array = Types.Boolean.convertToByteArray(b);
+    }
+
     public Byte[] getBytes() {
         return Stream
                 .concat(Stream.of(type.getTypeInByte()), Stream.of(array))
